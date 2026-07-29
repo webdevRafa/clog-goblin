@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clog-goblin.vercel.app/sitemap.xml
+
