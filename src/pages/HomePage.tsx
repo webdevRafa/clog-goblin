@@ -165,7 +165,7 @@ export default function HomePage() {
                     ease: [0.22, 1, 0.36, 1],
                   }}
                 >
-                  {word}{' '}
+                  {word}
                 </motion.span>
               ))}
             </h1>
