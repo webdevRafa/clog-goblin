@@ -1591,6 +1591,13 @@
   text-transform: uppercase;
 }
 
+.page-hero--compact-title h1 {
+  max-width: 760px;
+  font-size: clamp(2.65rem, 4.25vw, 4.75rem);
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+
 .page-hero__copy > div > p:not(.eyebrow) {
   max-width: 760px;
   margin-bottom: 0;
@@ -3025,19 +3032,20 @@
 
 .site-footer__cta-inner {
   display: flex;
-  min-height: 16rem;
+  min-height: 0;
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+  padding-block: clamp(4.5rem, 7vw, 6rem);
 }
 
 .site-footer__cta h2 {
   max-width: 700px;
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(2.3rem, 4.6vw, 4.3rem);
-  letter-spacing: -0.045em;
-  line-height: 0.99;
+  font-size: clamp(2.1rem, 3.6vw, 3.6rem);
+  letter-spacing: -0.035em;
+  line-height: 1.03;
   text-transform: uppercase;
 }
 
