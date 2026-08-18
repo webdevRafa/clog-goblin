@@ -13,7 +13,6 @@ type PageHeroProps = {
   imageAlt: string
   badge?: string
   actions?: ReactNode
-  compactTitle?: boolean
 }
 
 export function PageHero({
@@ -24,12 +23,9 @@ export function PageHero({
   imageAlt,
   badge = 'Professional help · tasteful toilet jokes',
   actions,
-  compactTitle = false,
 }: PageHeroProps) {
   return (
-    <section
-      className={compactTitle ? 'page-hero page-hero--compact-title' : 'page-hero'}
-    >
+    <section className="page-hero">
       <Container className="page-hero__grid">
         <div className="page-hero__copy">
           <MotionReveal type="fade">

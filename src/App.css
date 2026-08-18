@@ -550,13 +550,13 @@
 }
 
 .home-hero h1 {
-  max-width: 850px;
+  max-width: 760px;
   margin-bottom: 1.5rem;
   color: var(--color-cream);
   font-family: var(--font-display);
-  font-size: clamp(3.1rem, 6.4vw, 6.55rem);
-  letter-spacing: -0.042em;
-  line-height: 0.94;
+  font-size: var(--font-size-display);
+  letter-spacing: -0.035em;
+  line-height: 1.02;
   text-transform: uppercase;
 }
 
@@ -1080,7 +1080,7 @@
 .image-callout h2 {
   margin-bottom: 1.35rem;
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5.4vw, 5.35rem);
+  font-size: var(--font-size-display);
   letter-spacing: -0.045em;
   line-height: 0.96;
   text-transform: uppercase;
@@ -1203,7 +1203,7 @@
 .gary-callout__copy h2 {
   margin-bottom: 1.2rem;
   font-family: var(--font-display);
-  font-size: clamp(2.7rem, 5.4vw, 5.35rem);
+  font-size: var(--font-size-display);
   letter-spacing: -0.045em;
   line-height: 0.95;
   text-transform: uppercase;
@@ -1588,19 +1588,13 @@
 }
 
 .page-hero h1 {
+  max-width: 760px;
   margin-bottom: 1.5rem;
   font-family: var(--font-display);
-  font-size: clamp(2.9rem, 6.2vw, 6.45rem);
-  letter-spacing: -0.042em;
-  line-height: 0.95;
-  text-transform: uppercase;
-}
-
-.page-hero--compact-title h1 {
-  max-width: 760px;
-  font-size: clamp(2.65rem, 4.25vw, 4.75rem);
+  font-size: var(--font-size-display);
   letter-spacing: -0.035em;
   line-height: 1.02;
+  text-transform: uppercase;
 }
 
 .page-hero__copy > div > p:not(.eyebrow) {
@@ -2980,7 +2974,7 @@
   max-width: 820px;
   margin-bottom: 1.25rem;
   font-family: var(--font-display);
-  font-size: clamp(3.1rem, 7vw, 6.75rem);
+  font-size: var(--font-size-display);
   letter-spacing: -0.045em;
   line-height: 0.94;
   text-transform: uppercase;
@@ -3495,7 +3489,10 @@
   }
 
   .home-hero h1 {
-    font-size: clamp(2.85rem, 14vw, 4.5rem);
+    max-width: 100%;
+    font-size: var(--font-size-display);
+    letter-spacing: -0.03em;
+    line-height: 1.04;
   }
 
   .home-hero__actions,
@@ -3596,7 +3593,7 @@
   }
 
   .image-callout h2 {
-    font-size: 3.2rem;
+    font-size: var(--font-size-display);
   }
 
   .process-grid article {
@@ -3674,7 +3671,7 @@
 
   .page-hero h1 {
     max-width: 100%;
-    font-size: clamp(2rem, 9vw, 3rem);
+    font-size: var(--font-size-display);
     letter-spacing: -0.03em;
     line-height: 1.04;
     overflow-wrap: anywhere;

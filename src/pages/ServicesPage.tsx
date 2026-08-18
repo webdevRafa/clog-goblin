@@ -21,7 +21,6 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="All services"
         title="Serious Plumbing for Questionable Situations"
-        compactTitle
         body="From a faucet that will not stop tapping out a tiny distress signal to a sewer line leading a full-house rebellion, start with the service that best matches what your plumbing is doing."
         image={garyServices}
         imageAlt="Gary wrestling a cartoon drain monster with a plunger"
