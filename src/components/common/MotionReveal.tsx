@@ -29,7 +29,7 @@ const initialFor = (type: RevealType) => {
     case 'scale':
       return { opacity: 0, scale: 0.96 }
     case 'mask-reveal':
-      return { opacity: 0, clipPath: 'inset(0 0 100% 0)' }
+      return { opacity: 0, clipPath: 'inset(0 0 85% 0)' }
     case 'fade':
       return { opacity: 0 }
     case 'rise':
@@ -59,7 +59,7 @@ export function MotionReveal({
         scale: 1,
         clipPath: 'inset(0 0 0% 0)',
       }}
-      viewport={{ once, amount: 0.2 }}
+      viewport={{ once, amount: type === 'mask-reveal' ? 0.05 : 0.2 }}
       transition={{
         duration: reducedMotion ? 0.12 : duration,
         delay: reducedMotion ? 0 : delay,
@@ -70,4 +70,3 @@ export function MotionReveal({
     </motion.div>
   )
 }
-
