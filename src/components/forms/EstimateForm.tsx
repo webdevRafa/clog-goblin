@@ -84,7 +84,7 @@ export function EstimateForm() {
         photoName: photo?.name,
       })
       setSubmitted(true)
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      window.scrollTo({ top: 0, behavior: 'auto' })
     } catch {
       setSubmitError(
         'The request did not go through. Check your connection and try again, or call if the plumbing situation is getting worse.',

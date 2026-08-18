@@ -1,19 +1,16 @@
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion'
-
 export function ScrollToTop() {
-  const { pathname } = useLocation()
-  const reducedMotion = usePrefersReducedMotion()
+  const { key } = useLocation()
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: reducedMotion ? 'auto' : 'smooth',
+      left: 0,
+      behavior: 'auto',
     })
-  }, [pathname, reducedMotion])
+  }, [key])
 
   return null
 }
-
